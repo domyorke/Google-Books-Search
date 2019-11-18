@@ -1,5 +1,9 @@
+// The path module provides utilities for working with file and directory paths such as format(), join(), parse() and dirname().
 const path = require("path");
+// Router object is built into Node and is an isolated instance of middleware and routes. Once we have our router, we can use middleware and HTTP routes such as get, put, post, etc.
 const router = require("express").Router();
+
+//Creating variables to refer to for our books and google js files.
 const bookRoutes = require("./books");
 const googleRoutes = require("./google");
 

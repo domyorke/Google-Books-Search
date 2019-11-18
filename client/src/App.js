@@ -1,4 +1,7 @@
+//ES6 way of writing "var React = require('react')
+// Allows us to use React methods such as React.Component.
 import React from "react";
+
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./pages/Home";
 import Saved from "./pages/Saved";
