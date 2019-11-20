@@ -10,6 +10,6 @@ import App from "./App";
 //Importing registerServiceWorker.js
 import registerServiceWorker from "./registerServiceWorker";
 
-//ReactDOM Render method used to render the App component, getting the root ID in the HTML, and importing the logic from registerServiceWorker.js
+//ReactDOM Render method used to render the App component, getting the root ID in the HTML, and importing the logic from registerServiceWorker.js.
 ReactDOM.render(<App />, document.getElementById("root"));
 registerServiceWorker();

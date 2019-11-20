@@ -1,5 +1,6 @@
 import React from "react";
 
+// Passing the Form component props and deconstucting the props object
 function Form({ q, handleInputChange, handleFormSubmit }) {
   return (
     <form>

@@ -2,25 +2,32 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
 
+// A class based component is Javascript class. It extends React.Component and it's only required method is render()
+// Extends component -> this line allows the Nav component to inherit everything that comes with a react component including the state object
 class Nav extends Component {
+  // State object with two key value pairs, open and width
   state = {
     open: false,
     width: window.innerWidth
   };
 
+  // updateWidthis a functional component. A functional component is a Javascript function that accepts props as it's argument and returns JSX
   updateWidth = () => {
+    // newState gets the value of width, which contains the width of the window's content
     const newState = { width: window.innerWidth };
 
+    // If this.state.open and newState.Width are greater than 991, newState.open is false. 
     if (this.state.open && newState.width > 991) {
       newState.open = false;
     }
-
+    // If not, setState to the newState
     this.setState(newState);
   };
 
   toggleNav = () => {
     this.setState({ open: !this.state.open });
   };
+
 
   componentDidMount() {
     window.addEventListener("resize", this.updateWidth);
